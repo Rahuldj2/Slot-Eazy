@@ -2,6 +2,8 @@ package com.sloteazy.app.models;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "Users")
 public class User {
@@ -12,6 +14,9 @@ public class User {
 
     @Column(name = "email", unique = true, nullable = false)
     private String email;
+
+    @OneToMany(mappedBy = "user")
+    private Set<UserOrganization> userOrganizations;
 
     @Column(name = "name", nullable = false)
     private String name;

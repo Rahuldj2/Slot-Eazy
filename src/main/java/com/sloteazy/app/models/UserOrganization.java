@@ -3,7 +3,7 @@ package com.sloteazy.app.models;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "UserOrganizations")
+@Table(name = "userorganizations")
 public class UserOrganization {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

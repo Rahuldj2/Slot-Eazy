@@ -3,9 +3,12 @@ com\sloteazy\app\service\UserServiceImpl.class
 com\sloteazy\app\models\RequestStatus.class
 com\sloteazy\app\service\UserService.class
 com\sloteazy\app\models\BookingStatus.class
+com\sloteazy\app\dao\OrganizationRepository.class
 com\sloteazy\app\models\SlotBooking.class
 com\sloteazy\app\models\Slot.class
+com\sloteazy\app\service\OrganizationService.class
 com\sloteazy\app\dao\UserRepository.class
+com\sloteazy\app\controller\OrganizationController.class
 com\sloteazy\app\models\RequestType.class
 com\sloteazy\app\models\UserRole.class
 com\sloteazy\app\models\DirectAssignment.class
@@ -15,4 +18,5 @@ com\sloteazy\app\models\UserOrganization.class
 com\sloteazy\app\controller\UserController.class
 com\sloteazy\app\models\Request.class
 com\sloteazy\app\models\Organization.class
+com\sloteazy\app\service\OrganizationServiceImpl.class
 com\sloteazy\app\models\AssignmentStatus.class
