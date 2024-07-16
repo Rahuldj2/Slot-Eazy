@@ -24,6 +24,7 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+    //This will be called when users signs in for first time
     @PostMapping("/insertUser")
     public User createUser(@RequestBody User user) {
         return userService.saveUser(user);
