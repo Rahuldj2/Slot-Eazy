@@ -29,4 +29,10 @@ public class UserController {
     public User createUser(@RequestBody User user) {
         return userService.saveUser(user);
     }
+
+    @GetMapping("/getUserIdByEmail")
+    public Long getUserIdByEmail(@RequestParam String email)
+    {
+        return userService.getUserIdByEmail(email);
+    }
 }
