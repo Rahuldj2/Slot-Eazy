@@ -27,8 +27,18 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+    @Override
     public Long getUserIdByEmail(String email) {
         return userRepository.findUserIdByEmail(email);
     }
+
+    @Override
+    public void deleteUserByEmail(String email)
+    {
+
+        userRepository.deleteUserByEmail(email);
+    }
+
+
 }
 
